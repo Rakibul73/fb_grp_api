@@ -1,12 +1,14 @@
 import httpx
 import eda_key
 from datetime import datetime, timedelta
-import eda_key
+# import eda_key
+import os
 
 from flask import Flask, jsonify
 
 # Replace these with your own values
-page_access_token = eda_key.access_token
+# page_access_token = eda_key.access_token
+page_access_token = os.environ.get("ACCESS_TOKEN")
 
 app = Flask(__name__)
 

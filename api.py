@@ -1,5 +1,4 @@
 import httpx
-import eda_key
 from datetime import datetime, timedelta
 import os
 

@@ -12,6 +12,10 @@ page_access_token = os.environ.get("ACCESS_TOKEN")
 
 app = Flask(__name__)
 
+@app.route('/')
+def main():
+    return "Welcome to the FB GROUP API!"
+
 @app.route('/latest_post/<group_id>')
 def latest_post(group_id):
     with httpx.Client() as client:

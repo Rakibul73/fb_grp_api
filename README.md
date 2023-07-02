@@ -38,13 +38,13 @@ variable name : `ACCESS_TOKEN` & value : `your_access_token`
 - make an app and visit https://developers.facebook.com/tools/explorer/
 - select your app name & select `user token`
 - add these permissions = 
--- user_photos
--- user_posts
--- user_managed_groups
--- groups_show_list
--- publish_to_groups
--- groups_access_member_info
--- public_profile
+  - user_photos
+  - user_posts
+  - user_managed_groups
+  - groups_show_list
+  - publish_to_groups
+  - groups_access_member_info
+  - public_profile
 - make sure you have Graph api advanced previlage access
 - now generate access token (extend your access token validity -- google it how)
 
